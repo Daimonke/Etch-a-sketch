@@ -38,9 +38,11 @@ margin: 0 auto;
 .gridContainer {
     display: grid;
     margin: 10px auto 0 auto;
-    width: 600px;
-    height: 500px;
+    width: 60vw;
+    height: 60vh;
     
+}
+.gridContainer div {
 }
 
 .colorChoices .black {
@@ -66,7 +68,10 @@ background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(159,127,54,1) 16%,
         height: 47vh;
     }
     .buttons input {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
+        }
+        .buttons {
+            width: 70%;
         }
 }
