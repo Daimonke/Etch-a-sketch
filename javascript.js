@@ -1,3 +1,62 @@
+let gridSize = document.getElementById("gridSizeRange");
+ const gridContainer = document.querySelector('.gridContainer');
+ const blackMode = document.querySelector('.black');
+ const rainbowMode = document.querySelector('.rainbow');
+ 
+
+ function changeColor(e) {
+    const blackMode = document.querySelector('.black');
+    const rainbowMode = document.querySelector('.rainbow');
+    if (blackMode.classList.contains('enabled')) {
+     e.target.style.backgroundColor = `black`;
+ } else {
+    const randomR = Math.floor(Math.random() * 256)
+    const randomG = Math.floor(Math.random() * 256)
+    const randomB = Math.floor(Math.random() * 256)
+    e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+ }
+
+}
+
+
+ function enabledModeBlack() {
+    const blackMode = document.querySelector('.black');
+    const rainbowMode = document.querySelector('.rainbow');
+
+    rainbowMode.classList.remove("enabled");
+    blackMode.classList.add("enabled");
+    blackMode.style.border = `solid red`;
+    rainbowMode.style.border = `solid black`;
+
+ }
+ function enabledModeRainbow() {
+    const blackMode = document.querySelector('.black');
+    const rainbowMode = document.querySelector('.rainbow');
+
+    blackMode.classList.remove("enabled");
+    rainbowMode.classList.add("enabled");
+    blackMode.style.border = `solid black`;
+    rainbowMode.style.border = `solid red`;
+
+ }
+ 
+function clearGrid() {
+    const gridContainer = document.querySelector('.gridContainer');
+     gridContainer.innerHTML = '';
+     gridContainer.style.border = `none`
+}
+
+// function enabledMode() {
+//     const blackMode = document.querySelector('#black');
+//     const rainbowMode = document.querySelector('#rainbow');
+//     if (blackMode.classList.contains("enabled")) {
+//         return;
+//     } else if (rainbowMode.) {
+//         blackMode.classList.add("enabled");
+//         rainbowMode.classList.remove("enabled");
+//     } ;
+// }
+
 
 function getGridSize()
 {
@@ -16,12 +75,4 @@ for (let i = 0; i < gridSize*gridSize; i++) {
     div.addEventListener('mouseover', changeColor)
 gridContainer.appendChild(div);
 }
-}
-
-function changeColor(e) {
-    e.target.style.backgroundColor = `black`;
-}
-
-function clearGrid() {
-    gridContainer.innerHTML = '';
 }
