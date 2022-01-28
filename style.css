@@ -43,14 +43,16 @@ margin: 0 auto;
     height: 100%;
     
 }
+.colorChoices .enabled {
+    color: white;
+    border: solid red !important;
+}
 
 .colorChoices .black {
     background-color: rgb(0, 0, 0);
     border: solid black;
 }
-.enabled {
-    color: white;
-}
+
 
 .colorChoices .rainbow {
     border: solid black;
