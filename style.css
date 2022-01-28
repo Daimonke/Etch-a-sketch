@@ -68,10 +68,10 @@ background: linear-gradient(90deg, rgba(180,58,58,1) 0%, rgba(159,127,54,1) 16%,
         height: 47vh;
     }
     .buttons input {
-        width: 60%;
+        width: 50%;
         margin: 0 auto;
         }
-        .buttons {
-            width: 70%;
-        }
+    .buttons {
+        width: 70%;
+    }
 }
