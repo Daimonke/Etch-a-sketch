@@ -50,6 +50,7 @@ margin: 0 auto;
 }
 .enabled {
     color: white;
+    border: solid red;
 }
 
 .colorChoices .rainbow {
