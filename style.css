@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 97vh;
 }
 
 .buttons {
@@ -38,8 +39,8 @@ margin: 0 auto;
 .gridContainer {
     display: grid;
     margin: 10px auto 0 auto;
-    width: 60vw;
-    height: 60vh;
+    width: 600px;
+    height: 100%;
     
 }
 
