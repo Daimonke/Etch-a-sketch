@@ -46,17 +46,6 @@ function clearGrid() {
      gridContainer.style.border = `none`
 }
 
-// function enabledMode() {
-//     const blackMode = document.querySelector('#black');
-//     const rainbowMode = document.querySelector('#rainbow');
-//     if (blackMode.classList.contains("enabled")) {
-//         return;
-//     } else if (rainbowMode.) {
-//         blackMode.classList.add("enabled");
-//         rainbowMode.classList.remove("enabled");
-//     } ;
-// }
-
 
 function getGridSize()
 {
