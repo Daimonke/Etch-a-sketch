@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
 </head>
+
 <body>
     <div class="wrapper">
-<div class="buttons">
-    <label for="range"><h1>Grid size</h1></label>
-    <input type="range" id="gridSizeRange" value="16" min="1" max="64" oninput="this.nextElementSibling.value = this.value + 'x' + this.value">
-    <output>16x16</output>
-    <div class="createClear">
-    <button type="submit" onclick="getGridSize()">Create Grid</button>
-    <button onclick="clearGrid()">Clear</button>
+        <div class="buttons">
+            <label for="range">
+                <h1>Grid size</h1>
+            </label>
+            <input type="range" id="gridSizeRange" value="16" min="1" max="64"
+                oninput="this.nextElementSibling.value = this.value + 'x' + this.value">
+            <output>16x16</output>
+            <div class="createClear">
+                <button type="submit" onclick="getGridSize()">Create Grid</button>
+                <button onclick="clearGrid()">Clear</button>
+            </div>
+            <div class="colorChoices">
+                <button class="black enabled" onclick="enabledModeBlack()">Black</button>
+                <button class="rainbow" onclick="enabledModeRainbow()">Rainbow</button>
+            </div>
+        </div>
+        <div class="gridContainer"></div>
     </div>
-    <div class="colorChoices">
-        <button class="black enabled" onclick="enabledModeBlack()">Black</button>
-        <button class="rainbow" onclick="enabledModeRainbow()">Rainbow</button>
-    </div>
-</div>
-<div class="gridContainer"></div>
-</div>
-
-<script src="javascript.js"></script>
 </body>
+
 </html>
